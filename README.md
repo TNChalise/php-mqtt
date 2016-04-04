@@ -44,9 +44,9 @@ use  \Mosquitto\Client as MosquittoClient;
 $client = new MosquittoClient;
 ```
 ###Examples
-1. Simple Publish
-2. Simple Subscribe
-3. Simple LWT
+1. [Simple Publish] (https://github.com/TNChalise/php-mqtt/blob/master/publish.php)
+2. [Simple Subscribe] (https://github.com/TNChalise/php-mqtt/blob/master/subscribe.php)
+3. [Simple LWT] (https://github.com/TNChalise/php-mqtt/blob/master/lwt.php)
 
 ### How to do with Android as client and Linux server as MQTT Broker. (With Active/InActive Status)
 For simplicity, I will connect broker from PHP-Client. This will remain same for android client.
