@@ -11,7 +11,7 @@ The analogy is that of a real last will: If a person dies, she can formulate a t
 
 ##Installation
 ###Step-1: Install MQTT Mosquitto Broker
-```LINUX
+```php
 1. wget http://repo.mosquitto.org/debian/mosquitto-repo.gpg.key
 2. sudo apt-key add mosquitto-repo.gpg.key
 3. cd /etc/apt/sources.list.d/
@@ -26,8 +26,10 @@ The analogy is that of a real last will: If a person dies, she can formulate a t
 1. $ sudo apt-get install mosquitto-clients
 
 ###Step-3: Install PECL Mosquitto Extension [https://github.com/mgdm/Mosquitto-PHP]
+```php
 1. pecl install Mosquitto-alpha
 2. Then add extension=mosquitto.so to your php.ini.
+```
  This will allow you to write :
 ```php
 $client = new Mosquitto\Client();
