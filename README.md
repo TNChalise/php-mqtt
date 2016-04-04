@@ -23,7 +23,9 @@ The analogy is that of a real last will: If a person dies, she can formulate a t
 ```
 
 ###Step-2: Install Mosquito-clients
+```php
 1. $ sudo apt-get install mosquitto-clients
+```
 
 ###Step-3: Install PECL Mosquitto Extension [https://github.com/mgdm/Mosquitto-PHP]
 ```php
