@@ -28,6 +28,13 @@ The analogy is that of a real last will: If a person dies, she can formulate a t
 ```
 
 ###Step-3: Install PECL Mosquitto Extension [https://github.com/mgdm/Mosquitto-PHP]
+####Prequistics: 
+```php
+1. sudo apt-get install php-pear
+2. sudo apt-get install php5-dev
+3. sudo apt-get install libmosquitto-dev
+```
+#### Mosquitto Alpha
 ```php
 1. pecl install Mosquitto-alpha
 2. Then add extension=mosquitto.so to your php.ini.
