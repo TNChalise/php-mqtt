@@ -3,14 +3,14 @@ PHP MQTT With LWT Explained
 
 This article assumes user have basic information about MQTT Protocol and basic functionlity. The Server end is mantained in Linux Operating System And Client side in PHP.
 
-###Active/InActive Status with LWT
+## Active/InActive Status with LWT
 
 LWT messages are not really concerned about detecting whether a client has gone offline or not (that task is handled by keepAlive messages). LWT messages are about what happens after the client has gone offline.
 
 The analogy is that of a real last will: If a person dies, she can formulate a testament, in which she declares what actions should be taken after she has passed away. An executor will heed those wishes and execute them on her behalf. The analogy in the MQTT world is that a client can formulate a testament, in which it declares what message should be sent on it's behalf by the broker, after it has gone offline.
 
-##Installation
-###Step-1: Install MQTT Mosquitto Broker
+## Installation
+### Step-1: Install MQTT Mosquitto Broker
 ```php
 1. wget http://repo.mosquitto.org/debian/mosquitto-repo.gpg.key
 2. sudo apt-key add mosquitto-repo.gpg.key
@@ -22,13 +22,13 @@ The analogy is that of a real last will: If a person dies, she can formulate a t
 8. Check whether installation is done or not: mosquitto
 ```
 
-###Step-2: Install Mosquito-clients
+### Step-2: Install Mosquito-clients
 ```php
 1. $ sudo apt-get install mosquitto-clients
 ```
 
-###Step-3: Install PECL Mosquitto Extension [https://github.com/mgdm/Mosquitto-PHP]
-####Prequistics: 
+### Step-3: Install PECL Mosquitto Extension [https://github.com/mgdm/Mosquitto-PHP]
+#### Prequistics: 
 ```php
 1. sudo apt-get install php-pear
 2. sudo apt-get install php5-dev
@@ -50,10 +50,10 @@ use  \Mosquitto\Client as MosquittoClient;
 
 $client = new MosquittoClient;
 ```
-###Examples
-1. [Simple Publish] (https://github.com/TNChalise/php-mqtt/blob/master/publish.php)
-2. [Simple Subscribe] (https://github.com/TNChalise/php-mqtt/blob/master/subscribe.php)
-3. [Simple LWT] (https://github.com/TNChalise/php-mqtt/blob/master/lwt.php)
+### Examples
+1. [Simple Publish](https://github.com/TNChalise/php-mqtt/blob/master/publish.php)
+2. [Simple Subscribe](https://github.com/TNChalise/php-mqtt/blob/master/subscribe.php)
+3. [Simple LWT](https://github.com/TNChalise/php-mqtt/blob/master/lwt.php)
 
 ### How to do with Android as client and Linux server as MQTT Broker. (With Active/InActive Status)
 For simplicity, I will connect broker from PHP-Client. This will remain same for android client.
@@ -131,7 +131,7 @@ There are several queue listeners.
     * Redis: predis/predis ~1.0
 
 
-###References
+### References
 1. http://mqtt.org/documentation
 2. http://www.hivemq.com/blog/mqtt-essentials-part-9-last-will-and-testament
 3. https://github.com/mgdm/Mosquitto-PHP
