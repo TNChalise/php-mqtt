@@ -118,7 +118,7 @@ You may want to store all the messages in database on the broadcast on every top
 ### Further, Sanitize ugly forever loop
 The concept here is, we are listening to all broadcasting messages on the server, and we never want to hung up with
 broker. So we have to loopForever() to process and record all messages.
-To acheive this, Install Supervisor: [http://supervisord.org/] A process monitor.
+To acheive this, Install [Supervisor](http://supervisord.org/), a process monitor.
 
 ### Donot loose any of the incomming messages.
 And one important thing, while you are subscribed to a wildcard topic, messages will arrive too soon that, you may miss
