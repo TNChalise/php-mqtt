@@ -108,12 +108,12 @@ You may want to store all the messages in database on the broadcast on every top
 2. Both Mosquitto and RSMB provide C client libraries that you could use, along with the appropriate library for your database.
 ```php
  $client->onSubscribe('subscribe');
-$client->subscribe('mqtt://topic/#', 1);
+ $client->subscribe('mqtt://topic/#', 1);
 
  function subscribe()
-    {
-       // Your mysql connection and process messages to store them.
-    }
+ {
+   // Your mysql connection and process messages to store them.
+ }
 ```
 ### Further, Sanitize ugly forever loop
 The concept here is, we are listening to all broadcasting messages on the server, and we never want to hung up with
